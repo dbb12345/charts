@@ -24,3 +24,4 @@ ownerUID: 568
 password: admin123
 timezone: America/Los_Angeles
 web_port: 32000
+global: {}

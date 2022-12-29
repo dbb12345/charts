@@ -19,3 +19,4 @@ service:
   gatewayPort: 30980
   swarmPort: 30941
 updateStrategy: Recreate
+global: {}

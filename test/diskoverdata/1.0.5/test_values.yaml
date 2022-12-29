@@ -48,3 +48,4 @@ diskoverCredentials:
 
 cronjobSchedule: "0 3 * * *"
 es_user: elasticsearch
+global: {}

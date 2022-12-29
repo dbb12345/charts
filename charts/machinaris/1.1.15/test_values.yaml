@@ -71,3 +71,4 @@ ports:
   protocol: TCP
 timezone: America/Edmonton
 updateStrategy: Recreate
+global: {}

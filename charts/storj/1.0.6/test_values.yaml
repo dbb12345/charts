@@ -24,3 +24,4 @@ runAsUser: 568
 storageSize: 500
 wallet: 0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 webPort: 30000
+global: {}
