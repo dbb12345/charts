@@ -9,10 +9,16 @@ data:
   init_config.sh: |-
     #!/bin/sh
     if ! [ -f ${DEFAULT_CERT_PATH} ] && ! [ -f ${DEFAULT_IDENTITY_CERT_PATH} ]; then
+      {{- if .Values.use_ci_values }}
+      echo -e "{{ .Values.ci_ca_cert | nindent 8 | trim }}" >> {{ .Values.identityCreationMountPath }}/ca.cert
+      echo -e "{{ .Values.ci_identity_cert | nindent 8 | trim }}" >> {{ .Values.identityCreationMountPath }}/identity.cert
+      echo -e "{{ .Values.ci_identity_key | nindent 8 | trim }}" >> {{ .Values.identityCreationMountPath }}/identity.key
+      {{- else }}
       curl -L https://github.com/storj/storj/releases/latest/download/identity_linux_amd64.zip -o identity_linux_amd64.zip
       unzip -o identity_linux_amd64.zip
       chmod +x identity
       ./identity create storagenode
       ./identity authorize storagenode ${AUTH_KEY}
+      {{- end }}
       chown -R {{ .Values.runAsUser }}:{{ .Values.runAsGroup }} {{ .Values.identityCreationMountPath }}
     fi
