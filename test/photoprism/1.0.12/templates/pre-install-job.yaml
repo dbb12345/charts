@@ -20,11 +20,6 @@ spec:
         helm.sh/chart: {{ template "common.names.chart" . }}
     spec:
       restartPolicy: Never
-      {{- if hasKey .Values.global "ixChartContext" }}
-        {{- if .Values.global.ixChartContext.addNvidiaRuntimeClass }}
-      runtimeClassName: {{ .Values.global.ixChartContext.nvidiaRuntimeClassName }}
-        {{- end }}
-      {{- end }}
       containers:
       - name: pre-install-job
         image: "alpine:latest"
