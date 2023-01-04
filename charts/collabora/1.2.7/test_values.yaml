@@ -362,4 +362,3 @@ nginx:
     repository: nginx
     tag: 1.21.3
 nodePort: 31980
-global: {}

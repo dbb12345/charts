@@ -14,11 +14,6 @@ spec:
       name: {{ template "common.names.fullname" . }}
       labels: {{ include "common.labels.selectorLabels" . | nindent 8 }}
     spec:
-      {{- if hasKey .Values.global "ixChartContext" }}
-        {{- if .Values.global.ixChartContext.addNvidiaRuntimeClass }}
-      runtimeClassName: {{ .Values.global.ixChartContext.nvidiaRuntimeClassName }}
-        {{- end }}
-      {{- end }}
       containers:
         - name: {{ .Chart.Name }}-nginx
           image: {{ printf "%s:%s" .Values.nginx.image.repository .Values.nginx.image.tag }}
