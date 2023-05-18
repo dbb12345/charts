@@ -280,9 +280,15 @@
             "healthy": true,
             "healthy_error": null,
             "location": "/__w/charts/charts/charts/machinaris",
+<<<<<<< HEAD
             "latest_version": "1.1.18",
             "latest_app_version": "v1.8.1",
             "latest_human_version": "v1.8.1_1.1.18",
+=======
+            "latest_version": "1.1.17",
+            "latest_app_version": "v1.8.0",
+            "latest_human_version": "v0.8.8_1.1.17",
+>>>>>>> parent of aa5b917f (upgrade to 1.8.1)
             "name": "machinaris",
             "title": "Machinaris",
             "icon_url": "https://raw.githubusercontent.com/guydavis/machinaris/main/web/static/machinaris.png"
