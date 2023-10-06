@@ -280,9 +280,9 @@
             "healthy": true,
             "healthy_error": null,
             "location": "/__w/charts/charts/charts/machinaris",
-            "latest_version": "2.0.0",
-            "latest_app_version": "v2.0.0",
-            "latest_human_version": "v2.0.0_2.0.0",
+            "latest_version": "2.0.1",
+            "latest_app_version": "v2.0.1",
+            "latest_human_version": "v2.0.1_2.0.1",
             "name": "machinaris",
             "title": "Machinaris",
             "icon_url": "https://raw.githubusercontent.com/guydavis/machinaris/main/web/static/machinaris.png"
