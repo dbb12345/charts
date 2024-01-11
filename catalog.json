@@ -25,6 +25,10 @@
                     "email": "no one"
                 }
             ],
+            "sources": [
+                "https://github.com/minio/minio",
+                "https://github.com/minio/charts"
+            ],
             "tags": [],
             "icon_url": "https://raw.githubusercontent.com/guydavis/machinaris/main/web/static/machinaris.png"
         }
