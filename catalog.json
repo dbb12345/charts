@@ -12,8 +12,8 @@
             "home": "https://www.machinaris.app/",
             "location": "/__w/charts/charts/charts/machinaris",
             "latest_version": "2.1.4",
-            "latest_app_version": "v2.1.4",
-            "latest_human_version": "v2.1.4_2.1.4",
+            "latest_app_version": "v2.2.0",
+            "latest_human_version": "v2.2.0_2.1.4",
             "last_update": "2024-01-11 11:13:18",
             "name": "machinaris",
             "recommended": false,
@@ -26,8 +26,8 @@
                 }
             ],
             "sources": [
-                "https://github.com/minio/minio",
-                "https://github.com/minio/charts"
+                "https://github.com/guydavis/machinaris",
+                "https://github.com/guydavis/machinaris"
             ],
             "tags": [],
             "screenshots": [
